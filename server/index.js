@@ -3,9 +3,9 @@ const app = express()
 const port = 3000
 const bodyParser = require("body-parser");
 const cookieParser = require('cookie-parser');
-const config = require('./config/key');
+const config = require('./server/config/key');
 const { User } = require("./models/User");
-const { auth } = require('./middleware/auth');
+const { auth } = require('./server/config/middleware/auth');
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
